@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="Rock__paper_and_scissors___AI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Rock__paper_and_scissors___AI">
+
+</Application>
