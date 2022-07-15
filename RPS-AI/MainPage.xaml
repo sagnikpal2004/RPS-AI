@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="RPS_AI.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RPS_AI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid RenderTransformOrigin="0.501,0.499">
+        <TextBlock HorizontalAlignment="Left" Margin="50,117,0,0" Text="Alpha - v1.0.0      Twitter: @sagnikpal2004      Instagram: sagnikpal2004" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="716"><Run Text="Welcome to Rock, paper and scissors - AI"/><LineBreak/><Run Text="You compete against an AI that gets better at beating you the more you play, as it learns from your every move"/></TextBlock>
+        <TextBlock x:Name="moveCountOut" HorizontalAlignment="Left" Margin="358,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="378" UseLayoutRounding="True" FlowDirection="LeftToRight"/>
+        <TextBlock HorizontalAlignment="Left" Margin="51,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="The AI has made a prediction based on your past"/><LineBreak/><Run Text="Make your choice:"/></TextBlock>
+        <Button x:Name="Rock" Content="Rock" Margin="50,311,0,0" VerticalAlignment="Top" Width="100" Click="Rock_Click" IsEnabled="False"/>
+        <Button x:Name="Paper" Content="Paper" Margin="200,311,0,0" VerticalAlignment="Top" Width="100" Click="Paper_Click" IsEnabled="False"/>
+        <Button x:Name="Scissors" Content="Scissors" Margin="350,311,0,0" VerticalAlignment="Top" Width="100" Click="Scissors_Click" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,397,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="The AI chose:"/>
+        <TextBox x:Name="AIChose" HorizontalAlignment="Left" Margin="150,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" TextAlignment="Center" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="67,434,0,0" Text="You chose:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="youChose" HorizontalAlignment="Left" Margin="150,430,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" TextAlignment="Center" IsReadOnly="True"/>
+        <TextBox x:Name="outcomeOutput" HorizontalAlignment="Left" Margin="150,467,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="71,539,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="AI's score:"/></TextBlock>
+        <TextBox x:Name="CScoreOut" HorizontalAlignment="Left" Margin="150,535,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" TextAlignment="Center" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="67,576,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Your score:"/></TextBlock>
+        <TextBox x:Name="PScoreOut" HorizontalAlignment="Left" Margin="150,572,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" TextAlignment="Center" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Height="82" Margin="50,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="691" FontSize="50"><Run Text="Rock, paper and scissors - AI"/><LineBreak/><Run/></TextBlock>
+    </Grid>
+</Page>
